@@ -48,9 +48,9 @@ send me a DM to check your pull request
  Wait for my code review.
 
  */
-
-#include "Item.h"
 #include "Character.h"
+#include "Item.h"
+
 #include "Dwarf.h"
 #include "Paladin.h"
 #include "Dragon.h"
@@ -68,7 +68,7 @@ int main()
     std::cout << "\nstart of battle" << std::endl;
 
     paladin.defend();
-    dragon.attack( paladin );
+    dragon.attack(paladin);
     dwarf.attack( dragon );
     paladin.attack( dragon ); //can't, he's dead
     
@@ -91,3 +91,4 @@ int main()
     
     return 0;
 }
+
