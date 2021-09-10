@@ -48,16 +48,16 @@ void useDefensiveItem(Character* character, Item& item)
     //dwarves, paladins, and DragonSlayers get extra boosts from defensive item.
     if( auto* chDwarf = dynamic_cast<Dwarf*>(character) )
     {
-        chDwarf->boostArmor( item.getBoost() * 1.1 );
+        chDwarf->boostArmor(static_cast<int>( item.getBoost() * 1.1 ));
     }
     else if( auto* chPaladin = dynamic_cast<Paladin*>(character) )
     {
         //same with paladins
-        chPaladin->boostArmor( item.getBoost() * 1.3 );
+        chPaladin->boostArmor (static_cast<int>( item.getBoost() * 1.3 ));
     }
     else if( auto* chDSlayer = dynamic_cast<DragonSlayer*>(character))
     {
-        chDSlayer->boostArmor( item.getBoost() * 1.5 );
+        chDSlayer->boostArmor (static_cast<int>( item.getBoost() * 1.5 ));
     }
     else if( auto* chDragon = dynamic_cast<Dragon*>(character) )
     {
@@ -68,15 +68,15 @@ void useHelpfulItem(Character* character, Item* item)
 {
     if( auto* chDwarf = dynamic_cast<Dwarf*>(character) )
     {
-        chDwarf->boostHitPoints(item->getBoost() * 2);
+        chDwarf->boostHitPoints(static_cast<int>(item->getBoost() * 2));
     }
     else if( auto* chPaladin = dynamic_cast<Paladin*>(character) )
     {
-        chPaladin->boostHitPoints(item->getBoost() * 1.5);
+        chPaladin->boostHitPoints(static_cast<int>(item->getBoost() * 1.5));
     }
     else if( auto* chDSlayer = dynamic_cast<DragonSlayer*>(character))
     {
-        chDSlayer->boostHitPoints(item->getBoost() * 1.25);
+        chDSlayer->boostHitPoints(static_cast<int>(item->getBoost() * 1.25));
     }
     else if( auto* chDragon = dynamic_cast<Dragon*>(character) )
     {
@@ -87,11 +87,11 @@ void useAttackItem(Character* character, Item* item)
 {
     if( auto* chDwarf = dynamic_cast<Dwarf*>(character) )
     {
-        chDwarf->boostAttackDamage(item->getBoost() * 1.5);
+        chDwarf->boostAttackDamage(static_cast<int>(item->getBoost() * 1.5));
     }
     else if( auto* chPaladin = dynamic_cast<Paladin*>(character) )
     {
-        chPaladin->boostAttackDamage(item->getBoost() * 1.33);
+        chPaladin->boostAttackDamage(static_cast<int>(item->getBoost() * 1.33));
     }
     else if( auto* chDSlayer = dynamic_cast<DragonSlayer*>(character))
     {
