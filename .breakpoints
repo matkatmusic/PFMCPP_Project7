@@ -1,3 +1,12 @@
 {
-  "files": {}
+  "files": {
+    "DefensiveItem.cpp": [
+      {
+        "id": "f520582b-0d6f-4293-b179-d186faea4610",
+        "line": 15,
+        "version": 38,
+        "index": 344
+      }
+    ]
+  }
 }
