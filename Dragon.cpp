@@ -22,5 +22,5 @@ const std::string& Dragon::getName(){return name;}
 
 std::string Dragon::getStats()
 {
-	return getCharacterStats(this);
+return getCharacterStats(this);
 }
