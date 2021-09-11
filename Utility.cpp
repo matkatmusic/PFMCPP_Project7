@@ -1,8 +1,10 @@
 #include "Utility.h"
-
+#include "Dwarf.h"
+#include "Paladin.h"
+#include "Dragon.h"
+#include "DragonSlayer.h"
 #include "HelpfulItem.h"
 #include "DefensiveItem.h"
-#include "Character.h"
 
 
 std::vector<std::unique_ptr<Item>> makeHelpfulItems(int num)
