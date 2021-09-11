@@ -91,7 +91,7 @@ void boosting(int& stat, int& initialVal)
 {
 	if(stat < initialVal)
 	{
-		stat = initialVal;
+        stat = initialVal;
 	}
 	stat *= 1.1f;
 	initialVal = stat;
