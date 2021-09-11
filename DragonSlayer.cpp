@@ -21,15 +21,15 @@ void DragonSlayer::attack(Character& other)
         //so they should USE their attack item before attacking the dragon... 
         //note that items are single-use only, so you need to reset it after use.  
         //look in the Character class for how the other item types are reset after use.
-	    if(dragon->getHP()>0 && attackItem != nullptr)
-	    {
-		    attackItem->use(this);
-		    attackItem.reset();
-	    }
-	    while( dragon->getHP() > 0 )
-	    {
-		    dragon->takeDamage(attackDamage);
-	    }
+        if(dragon->getHP()>0 && attackItem != nullptr)
+        {
+            attackItem->use(this);
+            attackItem.reset();
+        }
+        while( dragon->getHP() > 0 )
+        {
+            dragon->takeDamage(attackDamage);
+        }
     }
         
     Character::attack(other);
