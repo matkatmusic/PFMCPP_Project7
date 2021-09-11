@@ -89,12 +89,12 @@ int Character::takeDamage(int damage)
 
 void boostStats(int& stat, int& initialVal)
 {
-	if(stat < initialVal)
-	{
+    if(stat < initialVal)
+    {
         stat = initialVal;
-	}
-	stat *= 1.1f;
-	initialVal = stat;
+    }
+    stat *= 1.1f;
+    initialVal = stat;
 }
 
 //#include <assert>
