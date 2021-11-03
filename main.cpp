@@ -22,7 +22,7 @@ it's very easy to mess this task up.
  2) Assertions have been added with text explaining the things you need to implement.  
         after you implement them, remove the 'assert(false);
 
- 3) add the appropriate #include statements
+ 3) add the appropriate #include statements.  Remove any unnecessary #include statements
 
  4) you're going to need to implement the pure virtual functions in Character-derived classes and Item classes
     
