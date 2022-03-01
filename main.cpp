@@ -37,7 +37,8 @@ it's very easy to mess this task up.
             helpfulItems = makeHelpfulItems(2);
             defensiveItems = makeDefensiveItems(1);
     
- 7) create a new Item-derived type that boosts the attack damage called AttackItem 
+ 7) Dragon Slayers are allowed 1 special item: an AttackItem 
+    create a new Item-derived type that boosts the attack damage called AttackItem 
         add an instance of it to the DragonSlayer class
         make the DragonSlayer::attack use it when the dragonSlayer attacks a dragon. 
         
@@ -47,6 +48,11 @@ it's very easy to mess this task up.
          casting is introduced in the next video and project, so ignore any 'implicit conversion' warnings.
 
  9) When you compare your output with the expected output, it is fine if the items counts don't match exactly.   It's not important if your DragonSlayer has 5 helpful items, but the expected output shows 3. 
+
+ 10) correct any unnecessary keywords related to access specifiers used in the UDTs.
+
+ 11) Remember the rules about 'Don't include what you don't use'
+    check each source file for things being included that aren't used.
  */
 
 #include "Item.h"
